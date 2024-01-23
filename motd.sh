@@ -1,13 +1,5 @@
 #!/bin/bash
 clear
-chsh -s $(which zsh)
-if [ -d "$HOME/.oh-my-zsh" ]; then
-source ~/.zshrc > /dev/null 2>&1
-else
-  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" > /dev/null 2>&1 && \
-  sed -i 's/ZSH_THEME=".*"/ZSH_THEME="duellj"/' ~/.zshrc && \
-  source ~/.zshrc > /dev/null 2>&1
-fi
 
 BIN_DATE='/bin/date'
 BIN_FIGLET='/usr/bin/figlet'
