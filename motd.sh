@@ -1,10 +1,10 @@
 #!/bin/bash
 clear
 chsh -s $(which zsh)
-# Check if Oh My Zsh is installed
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash > /dev/null 2>&1
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
     # Install Oh My Zsh if not installed
-    yes '' | sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" > /dev/null 2>&1 && sed -i 's/ZSH_THEME=".*"/ZSH_THEME="duellj"/' ~/.zshrc && source ~/.zshrc > /dev/null 2>&1
+    yes '' | sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" > /dev/null 2>&1 && sed -i 's/ZSH_THEME=".*"/ZSH_THEME="duellj"/' ~/.zshrc && source ~/.zshrc 
     sed -i 's/ZSH_THEME=".*"/ZSH_THEME="duellj"/' ~/.zshrc
     source ~/.zshrc
     sudo su
