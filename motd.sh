@@ -1,5 +1,6 @@
 #!/bin/bash
 clear
+chsh -s $(which zsh)
 if [ -d "$HOME/.oh-my-zsh" ]; then
 source ~/.zshrc > /dev/null 2>&1
 else
