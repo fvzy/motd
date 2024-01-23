@@ -1,14 +1,13 @@
 #!/bin/bash
 clear
 chsh -s $(which zsh)
-if [ -d "$HOME/.oh-my-zsh" ]; then
-source ~/.zshrc > /dev/null 2>&1
-sudo su
-else
-  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" > /dev/null 2>&1 && \
-  sed -i 's/ZSH_THEME=".*"/ZSH_THEME="duellj"/' ~/.zshrc && \
-  source ~/.zshrc > /dev/null 2>&1
-  sudo su
+# Check if Oh My Zsh is installed
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+    # Install Oh My Zsh if not installed
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" > /dev/null 2>&1
+    sed -i 's/ZSH_THEME=".*"/ZSH_THEME="duellj"/' ~/.zshrc
+    source ~/.zshrc
+    sudo su
 fi
 
 BIN_DATE='/bin/date'
