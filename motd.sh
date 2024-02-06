@@ -8,6 +8,12 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
     source ~/.zshrc
     sudo su
 fi
+if [ ! -f /usr/bin/menu ]; then
+    cd /usr/local/bin/ || exit
+    wget https://raw.githubusercontent.com/fvzy/req/main/menu
+    chmod +x /usr/local/bin/menu 
+    cd
+fi
 mb_to_gb() {
     local mb=$1
     local gb=$(echo "scale=2; $mb / 1024" | bc)
