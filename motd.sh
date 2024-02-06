@@ -96,7 +96,9 @@ ${COLOR_RED}✘ DILARANG UNTUK MENGGUNAKAN KEGIATAN ILLEGAL
 ${COLOR_RED}✘ DILARANG UNTUK BRUTE FORCE
 ${COLOR_RED}✘ And other illegal activities...${COLOR_DEFAULT}
 ==============================================
-${COLOR_WHITE}Jangan lupa follow ${COLOR_RED}@ditzzsxz_ ${COLOR_WHITE}yaaa... arigatou and enjoyy your vps~~"
+${COLOR_WHITE}Jangan lupa follow ${COLOR_RED}@ditzzsxz_ ${COLOR_WHITE}yaaa... arigatou and enjoyy your vps~~
+${COLOR_WHITE}Silahkan ketik [ ${COLOR_RED}menu${COLOR_WHITE} ] untuk melihat menu yang tersedia
+"
 # config
 max_usage=90
 bar_width=50
