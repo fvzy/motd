@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Please Wait ....."
 clear
 chsh -s $(which zsh)
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
