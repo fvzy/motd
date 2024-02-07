@@ -5,7 +5,7 @@ chsh -s $(which zsh)
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
     # Install Oh My Zsh if not installed
     yes '' | sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" > /dev/null 2>&1 && sed -i 's/ZSH_THEME=".*"/ZSH_THEME="duellj"/' ~/.zshrc && source ~/.zshrc 
-    sed -i 's/ZSH_THEME=".*"/ZSH_THEME="duellj"/' ~/.zshrc
+    sed -i 's/ZSH_THEME=".*"/ZSH_THEME="darkblood"/' ~/.zshrc
     source ~/.zshrc
     sudo su
 fi
